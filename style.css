@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    border: 2px solid black;
+    height: 100vh;
+    background-image: url("image/fonds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    gap: 50px;
+}
+header{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.logo a span{
+    font-size: 2.5em
+}
+.logo-texte{
+    color:#2183E6 ;
+    width: 55%;
+}
+.navigation{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav{
+    width: 75%;
+}
+.navigation a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    text-decoration: underline;
+}
+.get a{
+    background-color: #2183E6;
+    border-radius: 5px;
+    padding: 10px;
+}
+.get a:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid #2183E6;
+}
+.Elevating{
+    height: 300px;
+    color: white;
+    padding: 10px 20px;
+
+    
+}
+.Elevating-gauche{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+   
+}
+h1{
+    font-size: 4em;
+    color: white;
+}
+h1+span{
+    font-size: 20px;
+}
+.Elevating-gauche a{
+    background-color: #2183E6;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+}
+.Elevating-gauche a:hover{
+     background-color: transparent;
+    color: white;
+    border: 2px solid #2183E6;
+}
+@media(max-width:1093px){
+    nav{
+        display: none;
+    }
+    .navigation{
+        justify-content: flex-end;
+    }
+    .Elevating-gauche{
+        width: 90%;
+    }
+    .hero{
+        height: 500px;
+    }
+}
+@media( max-width:653px) {
+    .logo a span{
+        font-size:  20px;
+    }
+    .logo a img{
+        width: 50px;
+    }
+    .Elevating-gauche{
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    .Elevating-gauche a{
+        width: 50%;
+    }
+}
+@media(max-width:404px){
+    .logo a img{
+        width: 30px;
+    }
+    .get a{
+        padding: 3px 5px;
+    }
+    .logo a span{
+       font-size: 19px;
+    }
+    h1{
+        font-size:2.5em;
+    }
+}
+
